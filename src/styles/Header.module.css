@@ -1,0 +1,32 @@
+.container {
+    height: 6rem;
+    background: linear-gradient(to right, #32e0ff, #5369ff);
+    font-size: 1.5rem;
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: #4d4b4b;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+}
+
+.badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    right: -1rem;
+    top: -1rem;
+}
