@@ -31,12 +31,12 @@ const Carousel = () => {
       <div className={styles.container}>
          <div className={styles.buttonsCarousel}>
             <SlArrowLeft
-               size={35}
+               size={"10%"}
                onClick={() => previousImage()}
                style={{cursor: 'pointer'}}
             />
             <SlArrowRight
-               size={35}
+               size={"10%"}
                onClick={() => nextImage()}
                style={{cursor: 'pointer'}}
             />

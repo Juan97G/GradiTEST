@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #1e1d1d;
     color: #EEE;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,7 @@
 
 .container h3 {
     font-size: 1.8rem;
+    text-align: center;
 }
 
 .container p span {
