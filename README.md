@@ -50,7 +50,7 @@ en el navegador.
 ### Ventana Modal
 
 #### Mobile
-![Ventana Modal - Mobile](src/assets/screenshots/ventana_modal_1.png)
+<img src="src/assets/screenshots/ventana_modal_1.png" width="400" alt="" />
 
 #### Tablet
 ![Ventana Modal - Tablet](src/assets/screenshots/ventana_modal_2.png)
