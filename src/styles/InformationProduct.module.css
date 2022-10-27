@@ -92,10 +92,12 @@
 
 .buttons button:first-child {
     background-color: #5369ff;
+    flex: 1;
 }
 
 .buttons button:last-child {
     background-color: #000;
+    flex: 1;
 }
 
 .textDetails {
@@ -108,5 +110,11 @@
 @media screen and (min-width: 576px){
     .container {
         flex: 1;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .buttons {
+        flex-direction: row;
     }
 }
