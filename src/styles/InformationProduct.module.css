@@ -104,3 +104,9 @@
     font-weight: 400;
     line-height: 1.3rem;
 }
+
+@media screen and (min-width: 576px){
+    .container {
+        flex: 1;
+    }
+}

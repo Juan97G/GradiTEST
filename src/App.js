@@ -12,9 +12,7 @@ const App = () => {
    /* USE EFFECT */
    useEffect( () => {
       (async() => {
-         const resp = await fetch("https://graditest-store.myshopify.com/products/free-trainer-3-mmw.js", {
-
-         });
+         const resp = await fetch("https://graditest-store.myshopify.com/products/free-trainer-3-mmw.js");
          const result = await resp.json();
          setResponse(result);
       })();
