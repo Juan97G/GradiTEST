@@ -87,11 +87,15 @@
     font-size: 1.3rem;
     font-weight: 700;
     cursor: pointer;
+    color: #EEE;
+}
+
+.buttons button:first-child {
+    background-color: #5369ff;
 }
 
 .buttons button:last-child {
     background-color: #000;
-    color: #EEE;
 }
 
 .textDetails {

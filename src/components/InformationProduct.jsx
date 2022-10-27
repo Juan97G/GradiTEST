@@ -1,20 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../styles/InformationProduct.module.css';
 import OptionColor from "./OptionColor";
 import Sizes from "./Sizes";
+import ModalCart from "./ModalCart";
 
-const InformationProduct = () => {
+const InformationProduct = ({information}) => {
+
+   /* STATES */
+   const [openModalCart, setOpenModalCart] = useState(false);
+
+
+   /* FUNCTIONS */
+   const toggleModal = () => {
+      setOpenModalCart(!openModalCart);
+   }
+
+
    return (
       <div className={styles.container}>
-         <h2 className={styles.title}>Free Trainer 3 / MMW</h2>
+         <h2 className={styles.title}>{information.title}</h2>
          <div className={styles.price}>
-            <h3>$ 285.000</h3>
-            <span>$ 358.000</span>
+            <h3>$ {information.price}</h3>
+            <span>$ {information.compare_at_price}</span>
          </div>
 
-         <OptionColor />
+         <OptionColor
+            colorsInfo={information.options[0]}
+         />
 
-         <Sizes />
+         <Sizes
+            sizesInfo={information.options[1]}
+         />
 
          <div className={styles.quantityAndTotal}>
             <div className={styles.containerQuantity}>
@@ -24,7 +40,7 @@ const InformationProduct = () => {
             </div>
             <div className={styles.containerTotal}>
                <span>Total Price: </span>
-               <span>$ 570.000</span>
+               <span>$ {information.price}</span>
             </div>
          </div>
 
@@ -32,19 +48,22 @@ const InformationProduct = () => {
             <button>
                Add to favourite
             </button>
-            <button>
+            <button
+               onClick={() => toggleModal()}
+            >
                Add to cart
             </button>
          </div>
 
          <p className={styles.textDetails}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus distinctio
-            dolores doloribus eligendi, esse exercitationem fugit hic illo laudantium magnam non quam
-            quibusdam quidem rerum sequi sint temporibus vel!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus distinctio
-            dolores doloribus eligendi, esse exercitationem fugit hic illo laudantium magnam non quam
-            quibusdam quidem rerum sequi sint temporibus vel!
+            {information.description}
          </p>
+
+         <ModalCart
+            openModal={openModalCart}
+            toggleModal={toggleModal}
+            infoProduct={information}
+         />
 
       </div>
    );

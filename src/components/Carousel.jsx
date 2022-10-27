@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import styles from '../styles/Carousel.module.css';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 
-const Carousel = () => {
+const Carousel = ({imagesArray}) => {
 
-   const images = ['product-1.jpg', 'product-2.webp', 'product-3.webp', 'product-4.webp'];
+   //const images = ['product-1.jpg', 'product-2.webp', 'product-3.webp', 'product-4.webp'];
+   const images = imagesArray;
 
    /* STATES */
    const [indexImage, setIndexImage] = useState(0);
    const [selectedImage, setSelectedImage] = useState(images[0]);
-
 
    /* FUNCTIONS */
    const selectImage = (index, arrayImages, next = true) => {
@@ -43,7 +43,7 @@ const Carousel = () => {
          </div>
          <div className={styles.imagesCarousel}>
             <img
-               src={require(`../assets/${selectedImage}`)}
+               src={`https:${selectedImage.split('?')[0]}`}
                alt=""
             />
          </div>
