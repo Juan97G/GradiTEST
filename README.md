@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# GradiTEST - Prueba técnica para la empresa Gradiweb
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+Proyecto desarrollado mediante [Create React App](https://create-react-app.dev/).
 
-In the project directory, you can run:
+Se realizó la maquetación de una ficha de producto de acuerdo al 
+consumo de una data de un endpoint proporcionado, realizando un carrusel y 
+su respectivo responsive para los distintos tipos de dispositivos, además 
+de realizar la maquetación de una ventana modal con funcionalidad para la
+acción de **añadir al carrito**.
+
+### Endpoint: 
+https://graditest-store.myshopify.com/products/free-trainer-3-mmw.js
+
+El proyecto fue desarrollado bajo las siguientes tecnologías y librerías:
+
+* [x] **HTML5**
+* [x] **CSS3**
+* [x] **JavaScript**
+* [x] **React.js**
+
+## Scripts
+
+Para colocar en marcha el proyecto en ambiente local, se procede a correr el
+comando: 
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En el momento de cargar el proyecto, abrir [http://localhost:3000](http://localhost:3000) 
+en el navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Capturas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Fichas de Producto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Mobile
+![Ficha de Producto - Mobile](src/assets/screenshots/ficha_producto_1.png)
+![Ficha de Producto - Mobile](src/assets/screenshots/ficha_producto_2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Tablet
+![Ficha de Producto - Tablet](src/assets/screenshots/ficha_producto_3.png)
+![Ficha de Producto - Tablet](src/assets/screenshots/ficha_producto_4.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Desktop
+![Ficha de Producto - Desktop](src/assets/screenshots/ficha_producto_5.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Ventana Modal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Mobile
+![Ventana Modal - Mobile](src/assets/screenshots/ventana_modal_1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Tablet
+![Ventana Modal - Tablet](src/assets/screenshots/ventana_modal_2.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Desktop
+![Ventana Modal - Desktop](src/assets/screenshots/ventana_modal_3.png)
