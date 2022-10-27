@@ -53,15 +53,14 @@ const ModalCart = (props) => {
                   </div>
                </div>
             </div>
-
-            <div className={styles.buttons}>
-               <button>
-                  Go to cart
-               </button>
-               <button onClick={() => toggleModal()}>
-                  Continue shopping
-               </button>
-            </div>
+         </div>
+         <div className={styles.buttons}>
+            <button>
+               Go to cart
+            </button>
+            <button onClick={() => toggleModal()}>
+               Continue shopping
+            </button>
          </div>
       </div>,
       document.getElementById('modal')

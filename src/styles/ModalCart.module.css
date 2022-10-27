@@ -138,8 +138,41 @@
 
 .buttons button:first-child {
     background-color: #5369ff;
+    flex: 1;
 }
 
 .buttons button:last-child {
     background-color: #000;
+    flex: 1;
+}
+
+@media screen and (min-width: 576px){
+    .detail {
+        flex-direction: row;
+        padding: 0 1rem;
+        margin-top: 1.2rem;
+    }
+
+    .detailProduct {
+        border: none;
+        flex: 1;
+    }
+
+    .detailPrice {
+        padding: 1rem 0;
+        flex: 1;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,0.12);
+        -moz-box-shadow: 0 0 10px 4px rgba(0,0,0,0.12);
+        box-shadow: 0 0 10px 4px rgba(0,0,0,0.12);
+    }
+
+    .detailPriceInfo {
+        padding: 0 2rem;
+    }
+
+    .buttons {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
 }

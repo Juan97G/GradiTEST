@@ -23,3 +23,13 @@
     justify-content: space-between;
 }
 
+@media screen and (min-width: 576px){
+    .container {
+        flex: 1;
+    }
+
+    .buttonsCarousel {
+        top: 20%;
+    }
+}
+
