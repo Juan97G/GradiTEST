@@ -6,7 +6,6 @@
 .pnp.js
 
 .idea
-/src/assets/screenshots
 
 # testing
 /coverage

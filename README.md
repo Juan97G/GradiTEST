@@ -1,6 +1,5 @@
 # GradiTEST - Prueba técnica para la empresa Gradiweb
 
----
 
 Proyecto desarrollado mediante [Create React App](https://create-react-app.dev/).
 
@@ -33,7 +32,6 @@ en el navegador.
 
 ## Capturas
 
----
 
 ### Fichas de Producto
 
